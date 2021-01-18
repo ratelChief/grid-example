@@ -1,0 +1,25 @@
+.header {
+  background: linear-gradient(45deg, red, blue);
+  height: 20vh;
+  display: grid;
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: repeat(10, 10vw);
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.header__nav-links {
+  grid-column-start: 5;
+  grid-column-end: auto;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: var(--default-gap);
+  grid-row-start: 2;
+  transform: skewY(var(--default-skew));
+}
+
+.header__nav-link {
+  color: var(--main-color);
+}
