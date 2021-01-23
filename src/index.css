@@ -2,8 +2,16 @@ html,
 body {
   --main-color: hsla(59, 96%, 53%, 0.98);
 
+  --link-color--active: #91646a;
+  --link-color--disabled: #647091;
+  --link-color--hover: #917864;
+  --link-color: #6a9164;
+
+  --background-main: #b8c6db;
+
   --default-skew: 11deg;
-  --default-gap: 2rem;
+
+  --default-gap: 2ch;
 
   margin: 0;
   padding: 0;
@@ -37,4 +45,16 @@ ul {
 
 a {
   color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.mate-glass {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.72);
 }

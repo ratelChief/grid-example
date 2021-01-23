@@ -1,13 +1,13 @@
 .header {
   background: linear-gradient(45deg, red, blue);
-  height: 20vh;
+  height: 15vh;
   display: grid;
 }
 
 .header-nav {
   display: grid;
   grid-template-columns: repeat(10, 10vw);
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 5vh);
 }
 
 .header__nav-links {

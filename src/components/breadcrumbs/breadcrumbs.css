@@ -1,0 +1,26 @@
+.breadcrumbs-list {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  gap: var(--default-gap);
+  margin: 5px;
+}
+
+.breadcrumb-item {
+  padding-left: 20px;
+  color: var(--link-color);
+}
+
+.breadcrumb-item:hover {
+  color: var(--link-color--hover);
+}
+
+.breadcrumb-item--disabled {
+  color: var(--link-color--disabled);
+}
+
+.breadcrumb-item--selected {
+  color: var(--link-color--active);
+  text-decoration: none;
+  cursor: default;
+}

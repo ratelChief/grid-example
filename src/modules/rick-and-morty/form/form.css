@@ -1,0 +1,20 @@
+.form-module {
+  display: grid;
+  padding: 0 var(--default-gap);
+}
+
+.form-module__form {
+  display: grid;
+  gap: var(--default-gap);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.filter-input__label {
+  display: grid;
+}
+
+.filter-input__fieldset {
+  display: grid;
+}

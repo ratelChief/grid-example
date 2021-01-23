@@ -1,0 +1,13 @@
+.main {
+  display: grid;
+  height: 85vh;
+  grid-auto-rows: min-content;
+  background-color: var(--background-main);
+  background-image: linear-gradient(
+    315deg,
+    var(--background-main) 0%,
+    #f5f7fa 74%
+  );
+  overflow: auto;
+  gap: var(--default-gap);
+}
