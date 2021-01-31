@@ -1,7 +1,14 @@
 import React, { memo } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { HOME, LIST, RICK_AND_MORTY, USER } from '../../constants/paths';
+import {
+  DEVICE,
+  HOME,
+  LIST,
+  RICK_AND_MORTY,
+  USER,
+} from '../../constants/paths';
+
 import './header.css';
 
 const Header = () => (
@@ -22,6 +29,10 @@ const Header = () => (
 
         <li className="header__nav-link">
           <NavLink to={RICK_AND_MORTY}>Rick</NavLink>
+        </li>
+
+        <li className="header__nav-link">
+          <NavLink to={DEVICE}>Device</NavLink>
         </li>
       </ul>
     </nav>

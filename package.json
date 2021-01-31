@@ -80,7 +80,8 @@
             "data"
           ]
         }
-      ]
+      ],
+      "no-debugger": "warn"
     }
   },
   "browserslist": {

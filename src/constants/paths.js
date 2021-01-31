@@ -6,3 +6,6 @@ export const USER = '/user';
 export const RICK_AND_MORTY = '/rick-and-morty';
 export const RICK_AND_MORTY_CHARACTERS_LIST = `${RICK_AND_MORTY}/characters`;
 export const RICK_AND_MORTY_CHARACTER = `${RICK_AND_MORTY_CHARACTERS_LIST}/:id`;
+
+export const DEVICE = '/device';
+export const DEVICE_CATALOG = `${DEVICE}/catalog`;

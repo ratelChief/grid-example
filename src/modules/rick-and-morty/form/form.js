@@ -10,17 +10,22 @@ import './form.css';
 const Form = (props) => {
   const history = useHistory();
 
-  const [getCharacters, { loading, error }] = useLazyQuery(GET_CHARACTERS, {
-    onCompleted: (data) => {
-      props.onSubmit(data);
-      history.push(RICK_AND_MORTY_CHARACTERS_LIST);
+  const [getCharacters, { loading, error, data }] = useLazyQuery(
+    GET_CHARACTERS,
+    {
+      onCompleted: (data) => {
+        props.onSubmit(data);
+        history.push(RICK_AND_MORTY_CHARACTERS_LIST);
+      },
     },
-  });
+  );
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
     getCharacters({ variables: { filter: data } });
   };
+
+  console.log('data characters', data);
 
   return (
     <section className="form-module">
