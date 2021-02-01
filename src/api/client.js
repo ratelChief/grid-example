@@ -1,6 +1,6 @@
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 
-import { userInfoVar } from './queries';
+import { userInfoVar } from './localVariables';
 
 export const cache = new InMemoryCache({
   typePolicies: {
@@ -9,6 +9,18 @@ export const cache = new InMemoryCache({
         user: {
           read() {
             return userInfoVar();
+          },
+        },
+      },
+    },
+    Character: {
+      fields: {
+        name: {
+          read(data) {
+            return data;
+          },
+          merge(existing, incoming) {
+            return incoming;
           },
         },
       },

@@ -1,10 +1,4 @@
-import { gql, makeVar } from '@apollo/client';
-
-export const userInfoVar = makeVar({
-  name: 'Dennis',
-  surname: 'Rodman',
-  gender: 'Male',
-});
+import { gql } from '@apollo/client';
 
 export const GET_USER_INFO = gql`
   query User {

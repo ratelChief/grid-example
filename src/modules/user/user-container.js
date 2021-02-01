@@ -1,6 +1,8 @@
 import { useQuery } from '@apollo/client';
 import { useForm } from 'react-hook-form';
-import { GET_USER_INFO, userInfoVar } from '../../api/queries';
+
+import { userInfoVar } from '../../api/localVariables';
+import { GET_USER_INFO } from '../../api/queries';
 
 const UserContainer = () => {
   const { data } = useQuery(GET_USER_INFO);
